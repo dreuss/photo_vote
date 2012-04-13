@@ -5,15 +5,23 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
 
 gem "twitter-bootstrap-rails"
 
+group :production do
+  gem 'activerecord-postgresql-adapter'
+end
 
 group :development do
   gem 'rspec-rails'
+  gem 'sqlite3'
+end
+
+group :test do
   gem 'factory_girl_rails'
   gem 'capybara'
+  gem 'sqlite3'
 end
 
 # Gems used only for assets and not required
