@@ -1,0 +1,15 @@
+<%= form_for @photos do |f| %>
+    <p>
+      <%= f.label :url %>
+      <%= f.text_field :url %>
+      <%= @photos.errors[:url].join(",")  %>
+
+    </p>
+    <p>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+      <%= @photos.errors[:title].join(",")  %>
+
+    </p>
+    <%= f.submit "Save" %>
+<% end %>

@@ -1,0 +1,11 @@
+<h1>Photo List</h1>
+
+  <% @photos.each do |photo| %>
+      <div class="section">
+        <h2><%= photo.title %></h2>
+        <h5><%= photo.rank %></h5>
+        <p><%= image_tag (photo.url)  %></p>
+      </div>
+  <% end %>
+
+
