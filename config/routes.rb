@@ -1,10 +1,10 @@
 PhotoVote::Application.routes.draw do
   root :to => 'photos#index'
-  resources :photos
-
-
-  match "/photos/:id/upvote" => 'photos#upvote' , :as => :upvote
-
+  resources :photos do
+    member do
+      post :upvote
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

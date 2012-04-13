@@ -40,12 +40,12 @@ class PhotosController < ApplicationController
   end
 
   def upvote
-    if cookies[:photo_id] == params[:id]
+    if cookies[params[:id]].present?
       redirect_to photos_path
       flash[:error] = "You Already Voted Up"
     else
       @photos = Photo.find(params[:id])
-      cookies[:photo_id] = (params[:id])
+      cookies[params[:id]] = 1
       @photos.up_vote
       flash[:notice] = "Upvote made"
       redirect_to photos_path
