@@ -21,7 +21,7 @@
     <favorites_list name="photo_vote" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.3387471">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
@@ -63,7 +63,7 @@
           <file leaf-file-name="_form2.html.erb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/photos/_form2.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="35" selection-start="313" selection-end="313" vertical-scroll-proportion="0.27475467">
+                <state line="14" column="35" selection-start="313" selection-end="313" vertical-scroll-proportion="0.28360957">
                   <folding />
                 </state>
               </provider>
@@ -100,10 +100,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Gemfile">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="17" selection-start="273" selection-end="273" vertical-scroll-proportion="0.2842377">
+                <state line="15" column="17" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="7" column="0" selection-start="314" selection-end="314" vertical-scroll-proportion="0.13117547">
                   <folding />
                 </state>
               </provider>
@@ -121,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/spec/factories/users.rb" />
         <option value="$PROJECT_DIR$/spec/factories/photos.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120412211534_create_photos.rb" />
         <option value="$PROJECT_DIR$/app/views/photo/index.html.erb" />
@@ -137,6 +145,7 @@
         <option value="$PROJECT_DIR$/app/views/photos/_form2.html.erb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -742,11 +751,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/models/photo_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -822,14 +826,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/photos/_form2.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="35" selection-start="313" selection-end="313" vertical-scroll-proportion="0.27475467">
+        <state line="14" column="35" selection-start="313" selection-end="313" vertical-scroll-proportion="0.28360957">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="17" selection-start="273" selection-end="273" vertical-scroll-proportion="0.2842377">
+        <state line="15" column="17" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="314" selection-end="314" vertical-scroll-proportion="0.13117547">
           <folding />
         </state>
       </provider>
