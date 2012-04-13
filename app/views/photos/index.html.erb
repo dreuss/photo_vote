@@ -1,10 +1,9 @@
 <h1>Daily Photo - Top Voted</h1>
 
-
   <% @photos.each do |photo| %>
       <div class="section">
-        <h2><%= photo.title %> <span class="badge badge-info"><%= photo.rank %> - votes</span></h2>
-        <%= link_to 'Up Vote this photo', upvote_path(photo) %> |
+        <h2><%= photo.title  %> <span class="badge badge-info"><%= photo.rank %> - votes</span></h2>
+        <%= link_to 'Up Vote this photo', upvote_path(photo), :class => 'icon-plus btn btn-success' %> |
         <%= link_to "View Photo Details", photo_path(photo) %>
         <p><%= image_tag (photo.url)  %></p>
       </div>

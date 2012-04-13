@@ -33,11 +33,23 @@ class PhotosController < ApplicationController
     end
   end
 
-  def upvote
+  def destroy
     @photos = Photo.find(params[:id])
-    @photos.up_vote
-    flash[:notice] = "Upvote made"
+      @photos.destroy
     redirect_to photos_path
+  end
+
+  def upvote
+    if cookies[:photo_id] == params[:id]
+      redirect_to photos_path
+      flash[:error] = "You Already Voted Up"
+    else
+      @photos = Photo.find(params[:id])
+      cookies[:photo_id] = (params[:id])
+      @photos.up_vote
+      flash[:notice] = "Upvote made"
+      redirect_to photos_path
+    end
   end
 
   private
