@@ -30,7 +30,7 @@
           </a>
             <%= link_to 'Daily Photo', photos_path, :class =>'brand' %>
           <div class="container-fluid nav-collapse">
-            <ul class="nav">
+            <ul class="nav nav-pills">
               <li><%= link_to 'Submit Daily Shred Photos', new_photo_path %></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -40,7 +40,7 @@
 
     <div class="container-fluid">
       <% flash.each do |name, msg| %>
-          <%= content_tag :div, msg, :id => "flash_#{name}", :class => "#{name} alert-#{name}" %>
+          <%= content_tag :div, msg, :id => "flash_#{name}", :class => "#{name} alert alert-#{name}" %>
       <% end %>
 
       <div class="row-fluid">

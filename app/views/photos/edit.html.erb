@@ -5,7 +5,7 @@
 
 <div class="section">
   <h2><%= @photos.title %> <span class="badge badge-info"><%= @photos.rank %> - votes</span></h2>
-  <%= link_to "Delete Photo", photo_path(@photos), method: 'delete' %>
+  <%= link_to "Delete Photo", photo_path(@photos), method: 'delete', :class => 'btn btn-danger' %>
   <p><%= image_tag (@photos.url)  %></p>
 </div>
 

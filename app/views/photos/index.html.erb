@@ -1,4 +1,7 @@
-<h1>Daily Photo - Top Voted</h1>
+<%= cookies[:photo_id].inspect %>
+<%= cookies[:photo_id] %>
+
+<h1>Daily Photo - <%= @photos.count %> Showing</h1>
 
   <% @photos.each do |photo| %>
       <div class="section">
