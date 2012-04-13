@@ -1,0 +1,10 @@
+<h1>Edit this Photo</h1>
+<%= link_to 'View all Shred Shots', photos_path %> |
+<%= link_to 'Submit Daily Shred Photos', new_photo_path %>
+<%= render 'form2' %>
+
+<div class="section">
+  <h2><%= @photos.title %><span class="badge badge-info"> <%= @photos.rank %> - votes</span></h2>
+  <p><%= image_tag (@photos.url)  %></p>
+</div>
+

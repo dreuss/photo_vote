@@ -1,2 +1,9 @@
-<h1>Photo#show</h1>
-<p>Find me in app/views/photo/show.html.erb</p>
+<h1>Show Individual Photo</h1>
+
+    <div class="section">
+      <%= link_to "Edit Photo Details", edit_photo_path(@photos) %> |
+      <%= link_to 'View all Shred Shots', photos_path %>
+      <h2><%= @photos.title %> <span class="badge badge-info"><%= @photos.rank %> - votes</span></h2>
+      <p><%= image_tag (@photos.url)  %></p>
+    </div>
+
