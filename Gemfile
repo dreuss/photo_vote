@@ -10,7 +10,7 @@ gem 'rails', '3.2.3'
 gem "twitter-bootstrap-rails"
 
 group :production do
-  gem 'activerecord-postgresql-adapter'
+  gem 'pg'
 end
 
 group :development do
